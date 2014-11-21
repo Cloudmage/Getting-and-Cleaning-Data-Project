@@ -27,64 +27,56 @@ Code Book for Getting and Cleaning Data Project
 * 'actvity_type' column name for the activity type
 
 
+## Script Walkthrough
 
-## This script assumes that you have extracted the dataset as per the Readme.MD file
+This script assumes that you have extracted the dataset as per the Readme.MD file
 
-## Load the libray (data.table) needed for this R Script to work - The user will need this installed
+Load the libray (data.table) needed for this R Script to work - The user will need this installed
 
-######################################################################
-## Step 1 - Merge the training and test sets to create one data set ##
-######################################################################
 
-## Read the training data in the train directory - assign this to a variable called datatrain
-## Data set 'train/X_train.txt': Training set
-## Data set 'train/y_train.txt': Training labels
-## Data set 'subject_train.txt': Subject Train labels
+## Step 1 - Merge the training and test sets to create one data set 
 
-## Read the test data in the test directory - assign this to a variable called datatest
-## Data set 'test/X_test.txt': Test set
-## Data set 'test/y_test.txt': Test labels
-## Data set 'subject_test.txt': Subject Test labels
 
-## Read the features data in the dataset directory - assign this to a variable called datafeatures
-## Data set 'features.txt': List of all features
+Read the training data in the train directory - assign this to a variable called datatrain
+Data set 'train/X_train.txt': Training set
+Data set 'train/y_train.txt': Training labels
+Data set 'subject_train.txt': Subject Train labels
+Read the test data in the test directory - assign this to a variable called datatest
+Data set 'test/X_test.txt': Test set
+Data set 'test/y_test.txt': Test labels
+Data set 'subject_test.txt': Subject Test labels
 
-## Read the activity labels data in the dataset directory - assign this to a variable called datalabels
-## Data set 'activity_labels.txt': Links the class labels with their activity name
+Read the features data in the dataset directory - assign this to a variable called datafeatures
+Data set 'features.txt': List of all features
 
-## Merge the two data sets - datatrain and datatest - merge into a variable called datatotal
+Read the activity labels data in the dataset directory - assign this to a variable called datalabels
+Data set 'activity_labels.txt': Links the class labels with their activity name
 
-#####################################################################################################
-## Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement ##
-#####################################################################################################
+Merge the two data sets - datatrain and datatest - merge into a variable called datatotal
 
-## Using the sapply function extract the mean data from the merged output 'datatotal' and assign to variable datamean
 
-## Using the sapply function extract the standard data from the merged output 'datatotal' and assign to variable datastandard
+## Step 2 - Extracts only the measurements on the mean and standard deviation for each measurement 
 
-#####################################################################################
-## Step 3 - Uses descriptive activity names to name the activities in the data set ##
-#####################################################################################
+Using the sapply function extract the mean data from the merged output 'datatotal' and assign to variable datamean
 
-## Give the column names in the datalabels variable names of 'activity-id' and 'activity_type'
+Using the sapply function extract the standard data from the merged output 'datatotal' and assign to variable datastandard
 
-################################################################################
-## Step 4 - Appropriately label the data set with descriptive variable names ##
-################################################################################
+## Step 3 - Uses descriptive activity names to name the activities in the data set 
 
-## Put the datalabels into the datamean variable
+Give the column names in the datalabels variable names of 'activity-id' and 'activity_type'
 
-## Put the datalabels into the datastandard variable
 
-## Merge the datamean and datastandard into a variable datafinal
+## Step 4 - Appropriately label the data set with descriptive variable names 
 
-############################################################################################################################################################
-## Step 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject ##  
-############################################################################################################################################################
+Put the datalabels into the datamean variable
+Put the datalabels into the datastandard variable
+Merge the datamean and datastandard into a variable datafinal
 
-## Make a data table called datatidy using the data from Step 4
+Step 5 - From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 
-## From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean
-## of the activity_id and ativity_type and return the data to the datatidy variable
 
-## Write a text file to the working directory with the results in called datatidy.txt
+Make a data table called datatidy using the data from Step 4
+
+From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean of the 'activity_id' and 'activity_typ'e and return the data to the datatidy variable
+
+Write a text file to the working directory with the results in called datatidy.txt
