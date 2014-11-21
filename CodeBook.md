@@ -5,7 +5,7 @@ Code Book for Getting and Cleaning Data Project
 
 * "train/X_train.txt": Training set
 * "train/y_train.txt": Training labels
-* "ubject_train.txt": Subject Train labels
+* "subject_train.txt": Subject Train labels
 * "test/X_test.txt": Test set
 * "test/y_test.txt": Test labels
 * "subject_test.txt": Subject Test labels
