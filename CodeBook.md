@@ -77,6 +77,6 @@ Step 5 - From the data set in step 4, creates a second, independent tidy data se
 
 Make a data table called datatidy using the data from Step 4
 
-From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean of the 'activity_id' and 'activity_typ'e and return the data to the datatidy variable
+From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean of the 'activity_id' and 'activity_type' and return the data to the datatidy variable
 
 Write a text file to the working directory with the results in called datatidy.txt
