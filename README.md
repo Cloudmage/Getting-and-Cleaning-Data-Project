@@ -17,8 +17,13 @@ This data whould be in your working directory set in your versio of R for this s
 
 You can use the setwd() command to set your working directory. Use ?setwd to access the help file for this command
 
+You will also need the R Function - data.table to be installed in your version of R
 
 
+.
+.
+Licence for use of data set
+===========================
 
 From the readme file in the dataset - acknowledgement give to the following:
 
