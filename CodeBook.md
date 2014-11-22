@@ -10,18 +10,22 @@ Source Data for the project can be found at the following URL:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 
 
-## Data Sets used
+## Data Sets Used
 
 These are the data sets used from the Data Source within the project
 
-* "train/X_train.txt": Training set
-* "train/y_train.txt": Training labels
-* "subject_train.txt": Subject Train labels
-* "test/X_test.txt": Test set
-* "test/y_test.txt": Test labels
-* "subject_test.txt": Subject Test labels
-* "features.txt": List of all features
-* "activity_labels.txt": Links the class labels with their activity name
+* 'train/X_train.txt': Training set (7352 observations of the 561 features, for 21 of the 30 volunteers)
+* "train/y_train.txt": Training labels (A vector of 7352 integers, denoting the ID of the activity related to each of the observations in `X_train.txt`)
+* "subject_train.txt": Subject Train labels (A vector of 7352 integers, denoting the ID of the volunteer related to each of the observations in `X_train.txt`_
+* "test/X_test.txt": Test set (2947 observations of the 561 features, for 9 of the 30 volunteers)
+* "test/y_test.txt": Test labels (A vector of 2947 integers, denoting the ID of the activity related to each of the observations in `X_test.txt`)
+* "subject_test.txt": Subject Test labels (A vector of 2947 integers, denoting the ID of the volunteer related to each of the observations in `X_test.txt`)
+* "features.txt": List of all features (561 features)
+* "activity_labels.txt": Activity names and ids for each of the activities (6 activities)
+
+## Data files that were not used
+
+This analysis was performed using only the files listed above in the Data Sets Used section. None of the raw data supplied was used that is located in the "Inertial Signals" folders.
 
 ## Variables used 
 
