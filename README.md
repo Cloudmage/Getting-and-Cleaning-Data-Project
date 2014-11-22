@@ -20,8 +20,8 @@ You can use the setwd() command to set your working directory. Use ?setwd to acc
 You will also need the R Function - data.table - to be installed in your version of R
 
 
-.
-.
+A code book `CodeBook.md` exists for this project which should be reviewed to understand the run_analysis.R script and its functions. 
+
 Licence for use of data set
 ===========================
 
