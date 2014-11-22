@@ -1,7 +1,18 @@
 Code Book for Getting and Cleaning Data Project
 ===============================================
 
+## Data Source
+
+The main source of the data can be found at the following URL:
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+Source Data for the project can be found at the following URL:
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
+
 ## Data Sets used
+
+These are the data sets used from the Data Source within the project
 
 * "train/X_train.txt": Training set
 * "train/y_train.txt": Training labels
@@ -13,6 +24,8 @@ Code Book for Getting and Cleaning Data Project
 * "activity_labels.txt": Links the class labels with their activity name
 
 ## Variables used 
+
+These are the variables used within the run_analysis.R script and their descriptions
 
 * 'datatrain' merged data from "train/X_train.txt", "train/y_train.txt" and "subject_train.txt"
 * 'datatest' merged data from  "test/X_test.txt", "test/y_test.txt" and "subject_test.txt"
@@ -29,9 +42,13 @@ Code Book for Getting and Cleaning Data Project
 
 ## Script Walkthrough
 
-This script assumes that you have extracted the dataset as per the Readme.MD file
+This is the walkthrough of the run_analysis.R script
 
-Load the libray (data.table) needed for this R Script to work - The user will need this installed
+The script assumes that you have extracted the dataset as per the Readme.MD file
+
+## Load the required libraries
+
+Load the library (data.table) needed for this R Script to work - The user will need this installed
 
 
 ## Step 1 - Merge the training and test sets to create one data set 
@@ -80,3 +97,6 @@ Make a data table called datatidy using the data from Step 4
 From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean of the 'activity_id' and 'activity_type' and return the data to the datatidy variable
 
 Write a text file to the working directory with the results in called datatidy.txt
+
+
+
