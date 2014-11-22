@@ -14,14 +14,21 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 These are the data sets used from the Data Source within the project
 
-* 'train/X_train.txt': Training set (7352 observations of the 561 features, for 21 of the 30 volunteers)
-* "train/y_train.txt": Training labels (A vector of 7352 integers, denoting the ID of the activity related to each of the observations in `X_train.txt`)
-* "subject_train.txt": Subject Train labels (A vector of 7352 integers, denoting the ID of the volunteer related to each of the observations in `X_train.txt`_
-* "test/X_test.txt": Test set (2947 observations of the 561 features, for 9 of the 30 volunteers)
-* "test/y_test.txt": Test labels (A vector of 2947 integers, denoting the ID of the activity related to each of the observations in `X_test.txt`)
-* "subject_test.txt": Subject Test labels (A vector of 2947 integers, denoting the ID of the volunteer related to each of the observations in `X_test.txt`)
-* "features.txt": List of all features (561 features)
-* "activity_labels.txt": Activity names and ids for each of the activities (6 activities)
+* `train/X_train.txt`: Training set (7352 observations of the 561 features, for 21 of the 30 volunteers)
+
+* `train/y_train.txt`: Training labels (A vector of 7352 integers, denoting the ID of the activity related to each of the observations in `X_train.txt`)
+
+* `subject_train.txt`: Subject Train labels (A vector of 7352 integers, denoting the ID of the volunteer related to each of the observations in `X_train.txt`)
+
+* `test/X_test.txt`: Test set (2947 observations of the 561 features, for 9 of the 30 volunteers)
+
+* `test/y_test.txt`: Test labels (A vector of 2947 integers, denoting the ID of the activity related to each of the observations in `X_test.txt`)
+
+* `subject_test.txt`: Subject Test labels (A vector of 2947 integers, denoting the ID of the volunteer related to each of the observations in `X_test.txt`)
+
+* `features.txt`: List of all features (561 features)
+
+* `activity_labels.txt`: Activity names and ids for each of the activities (6 activities)
 
 ## Data files that were not used
 
@@ -31,17 +38,17 @@ This analysis was performed using only the files listed above in the Data Sets U
 
 These are the variables used within the run_analysis.R script and their descriptions
 
-* 'datatrain' merged data from "train/X_train.txt", "train/y_train.txt" and "subject_train.txt"
-* 'datatest' merged data from  "test/X_test.txt", "test/y_test.txt" and "subject_test.txt"
-* 'datafeature' raw data from "features.txt"
-* 'dataactivity' raw data from "activity_labels.txt"
-* 'datatotal' merged data from 'datatrain' and 'datatest'
-* 'datamean' using the sapply function extract the mean data from the merged output 'datatotal'
-* 'datastandard' using the sapply function extract the standard data from the merged output 'datatotal'
-* 'datafinal' merged data from 'datamean' and 'datastandard'
-* 'datatidy' final data after grouping by 'activity_id' and 'activity_type' and calculating the mean
-* 'activity_id' column name for the activity id
-* 'actvity_type' column name for the activity type
+* `datatrain` merged data from `train/X_train.txt`, `train/y_train.txt` and `subject_train.txt`
+* `datatest` merged data from  `test/X_test.txt`, `test/y_test.txt` and `subject_test.txt`
+* `datafeature` raw data from `features.txt`
+* `dataactivity` raw data from `activity_labels.txt`
+* `datatotal` merged data from `datatrain` and `datatest`
+* `datamean` using the sapply function extract the mean data from the merged output `datatotal`
+* `datastandard` using the sapply function extract the standard data from the merged output `datatotal`
+* `datafinal` merged data from 'datamean' and `datastandard`
+* `datatidy` final data after grouping by `activity_id` and `activity_type` and calculating the mean
+* `activity_id` column name for the activity id
+* `actvity_type` column name for the activity type
 
 
 ## Script Walkthrough
@@ -98,7 +105,7 @@ Step 5 - From the data set in step 4, creates a second, independent tidy data se
 
 Make a data table called datatidy using the data from Step 4
 
-From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean of the 'activity_id' and 'activity_type' and return the data to the datatidy variable
+From the output from Step 4 take the data and using lapply and Standard Deviation of mean find the mean of the `activity_id` and `activity_type` and return the data to the datatidy variable
 
 Write a text file to the working directory with the results in called datatidy.txt
 
